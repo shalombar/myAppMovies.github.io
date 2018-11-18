@@ -307,19 +307,26 @@ let moviesList = [
 ];
 
 
+export const getMoviesList = () => {
+    return {
+        type: 'GET_MOVIES_LIST',
+        payload: moviesList
+    }
+}
+
 // export const getMoviesList = () => {
 //     return {
-//         type: 'GET_MOVIES_LIST',
-//         payload: moviesList
+//         type: 'API',
+//         payload: { type: 'GET_MOVIES_LIST', method: 'get' }
 //     }
 // }
 
-export const getMoviesList = () => {
-    return {
-        type: 'API',
-        payload: { type: 'GET_MOVIES_LIST', method: 'get' }
-    }
-}
+// export const getMovies = () => {
+//     return {
+//         type: 'API',
+//         payload: { first: true, type: 'GET_MOVIES_LIST', method: 'get', moviesList }
+//     }
+// }
 
 export const api = (type, payload) => {
     return {

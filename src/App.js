@@ -9,6 +9,7 @@ import AddNewMovie from './common/AddNewMovie/AddNewMovie'
 
 class App extends Component {
   componentDidMount() {
+    // this.props.getMoviesList();
     this.props.getMoviesList();
   }
 

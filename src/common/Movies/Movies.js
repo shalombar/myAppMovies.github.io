@@ -8,11 +8,17 @@ class Movies extends Component {
     }
 
     _renderMoviesList() {
-        return (
-            <div className="moviesList">
-                {this.props.general.moviesList.map((item, index) => <Movie {...this.props} item={item} key={index} index={index}/>)}
-            </div>
-        );
+        // if(this.props.general.moviesList){
+            return (
+                <div className="moviesList">
+                    {this.props.general.moviesList.map((item, index) => <Movie {...this.props} item={item} key={index} index={index}/>)}
+                </div>
+            );
+        // }
+        // else {
+        //     return ''
+        // }
+
     }
 
     render() {
