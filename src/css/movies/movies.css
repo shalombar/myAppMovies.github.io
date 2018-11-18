@@ -1,0 +1,57 @@
+.App .container .btnContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px; }
+
+.App .container .modal .modal-dialog .modal-content .modal-body div input.invalid {
+  border: 1px solid red; }
+
+.App .container .modal .modal-dialog .modal-content .modal-body div .error-message {
+  color: #ff7272;
+  padding: 1em;
+  font-weight: bold; }
+
+.moviesList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .moviesList .movie {
+    width: 33%;
+    background: #ffc0cb;
+    border: 1px solid;
+    height: 250px;
+    position: relative;
+    object-fit: fill; }
+    .moviesList .movie .movieImg {
+      width: 100%;
+      overflow: hidden;
+      height: 100%;
+      position: absolute; }
+    .moviesList .movie .movieDetails {
+      width: 100%;
+      overflow: hidden;
+      height: 100%;
+      position: absolute;
+      flex-direction: column;
+      justify-content: space-between; }
+      .moviesList .movie .movieDetails .movieTitle {
+        font-size: 12px;
+        text-align: center; }
+      .moviesList .movie .movieDetails .detiails {
+        flex-direction: column;
+        margin-top: 13pt; }
+        .moviesList .movie .movieDetails .detiails div {
+          font-size: 7px;
+          padding: 2px 0; }
+          .moviesList .movie .movieDetails .detiails div span {
+            font-weight: bold; }
+      .moviesList .movie .movieDetails .container {
+        margin-top: 45px; }
+        .moviesList .movie .movieDetails .container .modal .modal-dialog .modal-content .modal-body div input.invalid {
+          border: 1px solid red; }
+        .moviesList .movie .movieDetails .container .modal .modal-dialog .modal-content .modal-body div .error-message {
+          color: #ff7272;
+          padding: 1em;
+          font-weight: bold; }

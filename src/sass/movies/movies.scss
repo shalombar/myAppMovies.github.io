@@ -1,0 +1,111 @@
+.App{
+    .container{
+        .btnContainer{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 10px;
+
+            button{
+            }
+        }
+        .modal{
+            .modal-dialog{
+                .modal-content{
+                    .modal-body{
+                        div{
+                            input{
+                                &.invalid{
+                                    border: 1px solid red;
+                                }
+                            }
+
+                            .error-message {
+                                color: #ff7272;
+                                padding: 1em;
+                                font-weight: bold;
+                              }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.moviesList{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap ;
+
+    .movie{
+        width: 33%;
+        background: #ffc0cb;
+        border: 1px solid;
+        height: 250px;
+        position: relative;
+        object-fit: fill;
+
+        .movieImg{
+            width: 100%;
+            overflow: hidden;
+            height:100%;
+            position: absolute;
+        }
+
+        .movieDetails{
+            width: 100%;
+            overflow: hidden;
+            height:100%;
+            position: absolute;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .movieTitle{
+                font-size: 12px;
+                text-align: center;
+            }
+
+            .detiails{
+                flex-direction: column;
+                margin-top: 13pt;
+
+                div{
+                    font-size: 7px;
+                    padding: 2px 0;
+                    
+                    span{
+                        font-weight:bold;
+
+                    }
+                }
+            }
+
+            .container{
+                margin-top: 45px;
+
+                .modal{
+                    .modal-dialog{
+                        .modal-content{
+                            .modal-body{
+                                div{
+                                    input{
+                                        &.invalid{
+                                            border: 1px solid red;
+                                        }
+                                    }
+
+                                    .error-message {
+                                        color: #ff7272;
+                                        padding: 1em;
+                                        font-weight: bold;
+                                      }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
