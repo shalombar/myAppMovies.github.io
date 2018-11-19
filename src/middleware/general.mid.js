@@ -6,7 +6,7 @@ const axios = require('axios');
 export default store => next => action => {
     if (action.type == 'API') {
         const SERVER_ENDPOINT = "http://localhost:3000/moviesList";
-        const OMDb_API = 'http://www.omdbapi.com/?apikey=81d51a00';
+        const OMDb_API = 'https://www.omdbapi.com/?apikey=81d51a00';
 
         let { type, method, index, newData, newDatas, id, currentDb } = action.payload;
 
