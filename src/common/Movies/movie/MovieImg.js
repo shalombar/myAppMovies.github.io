@@ -6,8 +6,8 @@ class MovieImg extends Component {
         super(props);
     }
 
-    _onMouseOver() {
-        this.props.movieDisplayUpdateCallback('movieDetails');
+    _onMouseEvent(val) {
+        this.props.movieDisplayUpdateCallback(val);
     }
 
     _renderMovieImg() {
@@ -19,7 +19,7 @@ class MovieImg extends Component {
             }
 
             return (
-                <div className="movieImg" onMouseOver={this._onMouseOver.bind(this)} style={style}></div>
+                <div className="movieImg" onMouseLeave={() => this._onMouseEvent('poster')} style={style} onMouseEnter={() => this._onMouseEvent('movieDetails')}></div>
             );
         }
         catch (err) { }

@@ -26,12 +26,10 @@
     object-fit: fill; }
     .moviesList .movie .movieImg {
       width: 100%;
-      overflow: hidden;
       height: 100%;
       position: absolute; }
     .moviesList .movie .movieDetails {
       width: 100%;
-      overflow: hidden;
       height: 100%;
       position: absolute;
       flex-direction: column;

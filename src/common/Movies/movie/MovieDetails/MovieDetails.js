@@ -17,7 +17,7 @@ class MovieDetails extends Component {
     _renderMovieDetails() {
         try {
             return (
-                <div className="movieDetails" onMouseOut={this._onMouseOut.bind(this)}>
+                <div className="movieDetails"  onMouseLeave={this._onMouseOut.bind(this)}>
                     <MovieTitle {...this.props} />
                     <Deatails {...this.props} />
                     <Buttons {...this.props}/>
