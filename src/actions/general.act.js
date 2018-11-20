@@ -363,10 +363,10 @@ export const deleteMovie = (newDatas, index) => {
     }
 }
 
-export const addMovie = (currentDb, newData, id) => {
+export const addMovie = (currentDb, newData, id, callback = () => { }) => {
     return {
         type: 'API',
-        payload: { type: 'ADD', currentDb, newData, id, method: 'post' }
+        payload: { type: 'ADD', currentDb, newData, id, method: 'post', callback },
     }
 }
 
@@ -374,5 +374,19 @@ export const isMovieExist = (val) => {
     return {
         type: 'IS_MOVIE_EXIST',
         payload: val
+    }
+}
+
+export const setCurrentMovie = (currentMovie) => {
+    return {
+        type: 'SET_CURRENT_MOVIE',
+        payload: currentMovie
+    }
+}
+
+export const isCorrectMovieTitle = (isCorrectMovieTitle) => {
+    return {
+        type: 'IS_CORRECT_MOVIE_TITLE',
+        payload: isCorrectMovieTitle
     }
 }

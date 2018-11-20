@@ -5,6 +5,7 @@ import Movies from './common/Movies/Movies';
 import { connect } from 'react-redux';
 import * as actions from './actions/general.act';
 import AddNewMovie from './common/AddNewMovie/AddNewMovie'
+import Modal from './common/Modal/Modal';
 // import './css/movies/movies.css';
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
       <div className="App">
         <AddNewMovie {...this.props} />
         <Movies {...this.props} />
+        <Modal {...this.props}/>
       </div>
     );
   }

@@ -13,13 +13,13 @@ class MovieImg extends Component {
     _renderMovieImg() {
         try {
             let style = {
-                'background-image': 'url(' + this.props.item.Poster + ')',
-                'background-repeat': 'no-repeat',
-                'background-size': 'cover'
+                'backgroundImage': 'url(' + this.props.item.Poster + ')',
+                'backgroundRepeat': 'no-repeat',
+                'backgroundSize': 'cover'
             }
 
             return (
-                <div className="movieImg" onMouseLeave={() => this._onMouseEvent('poster')} style={style} onMouseEnter={() => this._onMouseEvent('movieDetails')}></div>
+                <div className="movieImg" onMouseLeave={() => this._onMouseEvent('poster')} style={style} onMouseEnter={() => { this.props.setCurrentMovie(this.props.item); this._onMouseEvent('movieDetails'); }}></div>
             );
         }
         catch (err) { }

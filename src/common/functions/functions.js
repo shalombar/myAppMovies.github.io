@@ -110,13 +110,15 @@ export const arrayToString = (stringArray) => {
 }
 
 export const setUpperlowerCase = (stringArray) => {
-    stringArray[0] = stringArray[0].toUpperCase();
-    for (var i = 1; i < stringArray.length; ++i) {
-        if (!isNaN(stringArray[i])) {
-            stringArray[i] = stringArray[i].toLowerCase();
-        }
-        if (stringArray[i] == ' ') {
-            stringArray[++i] = stringArray[i].toUpperCase();
+    if (stringArray.length > 0) {
+        stringArray[0] = stringArray[0].toUpperCase();
+        for (var i = 1; i < stringArray.length; ++i) {
+            if (!isNaN(stringArray[i])) {
+                stringArray[i] = stringArray[i].toLowerCase();
+            }
+            if (stringArray[i] == ' ') {
+                stringArray[++i] = stringArray[i].toUpperCase();
+            }
         }
     }
 

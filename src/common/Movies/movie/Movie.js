@@ -21,7 +21,7 @@ class Movie extends Component {
 
         return (
             <div className="movie">
-                {this.props.index == this.props.general.openModalKey ? renderObj['movieDetails']() : renderObj[this.state.movieDisplay]()}
+                {renderObj[this.state.movieDisplay]()}
             </div>
         );
     }

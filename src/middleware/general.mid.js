@@ -8,32 +8,23 @@ export default store => next => action => {
         const SERVER_ENDPOINT = "http://localhost:3000/moviesList";
         const OMDb_API = 'https://www.omdbapi.com/?apikey=81d51a00';
 
-        let { type, method, index, newData, newDatas, id, currentDb } = action.payload;
+        let { type, method, index, newData, newDatas, id, currentDb, callback } = action.payload;
 
         let api = {
             'get': (data) => {
-                // axios.get(SERVER_ENDPOINT).then((res) => {
                 store.dispatch(actions.api(type, data))
-                // })
-                // .catch((err) => console.log(err))
+
             },
             'post': (newMovie) => {
-                // axios.post((SERVER_ENDPOINT), newMovie).then((res) => {
                 store.dispatch(actions.api(type, newMovie))
-                // })
-                // .catch((err) => console.log(err))
+
             },
             'put': () => {
-                // axios.put((SERVER_ENDPOINT + '/' + index + '/'), newData).then((res) => {
                 store.dispatch(actions.api(type, newDatas))
-                // })
-                // .catch((err) => console.log(err))
+
             },
             'delete': () => {
-                // axios.delete(SERVER_ENDPOINT + '/' + index + '/').then((res) => {
                 store.dispatch(actions.api(type, newDatas))
-                // })
-                // .catch((err) => console.log(err))
             }
         }
 
@@ -41,15 +32,27 @@ export default store => next => action => {
             let title = newData.title.replace(' ', '+');
 
             axios.get(OMDb_API + '&t=' + title + '&y=' + newData.year).then((respone) => {
+                console.log('zxczxc', respone)
+                if (respone.data.Response == 'False') {
+                    store.dispatch(actions.isCorrectMovieTitle(false))
+
+                    return;
+                }
+
                 let newMovie = respone.data;
 
                 newMovie['id'] = id;
                 if (!Functions.isMovieExist(currentDb, newMovie.imdbID)) {
                     api[method](newMovie);
                     store.dispatch(actions.isMovieExist(false))
+                    store.dispatch(actions.isCorrectMovieTitle(true))
                 }
                 else {
                     store.dispatch(actions.isMovieExist(true))
+                }
+
+                if (callback) {
+                    callback(respone);
                 }
             })
                 .catch((err) => console.log(err))

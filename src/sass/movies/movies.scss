@@ -1,3 +1,31 @@
+.ReactModalPortal{
+    .ReactModal__Overlay{
+        &.ReactModal__Overlay--after-open{
+            .ReactModal__Content{
+                &.ReactModal__Content--after-open{
+                    height: 210pt;
+                    width: 410pt;
+                    margin: 0 auto;
+                    .modal-body{
+                        div{
+                            input{
+                                &.invalid{
+                                    border: 1px solid red;
+                                }
+                            }
+                            .error-message {
+                                color: #ff7272;
+                                padding: 1em;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+} 
+
 .App{
     .container{
         .btnContainer{
@@ -9,27 +37,7 @@
             button{
             }
         }
-        .modal{
-            .modal-dialog{
-                .modal-content{
-                    .modal-body{
-                        div{
-                            input{
-                                &.invalid{
-                                    border: 1px solid red;
-                                }
-                            }
 
-                            .error-message {
-                                color: #ff7272;
-                                padding: 1em;
-                                font-weight: bold;
-                              }
-                        }
-                    }
-                }
-            }
-        }
     }
 }
 .moviesList{
@@ -80,29 +88,29 @@
                     }
                 }
             }
+        }
+    }
+}
 
-            .container{
-                margin-top: 45px;
+.modalContainer{
+    .modal{
+    margin-top: 45px;
 
-                .modal{
-                    .modal-dialog{
-                        .modal-content{
-                            .modal-body{
-                                div{
-                                    input{
-                                        &.invalid{
-                                            border: 1px solid red;
-                                        }
-                                    }
-
-                                    .error-message {
-                                        color: #ff7272;
-                                        padding: 1em;
-                                        font-weight: bold;
-                                      }
-                                }
+        .modal-dialog{
+            .modal-content{
+                .modal-body{
+                    div{
+                        input{
+                            &.invalid{
+                                border: 1px solid red;
                             }
                         }
+
+                        .error-message {
+                            color: #ff7272;
+                            padding: 1em;
+                            font-weight: bold;
+                          }
                     }
                 }
             }

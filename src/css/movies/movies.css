@@ -1,16 +1,19 @@
+.ReactModalPortal .ReactModal__Overlay.ReactModal__Overlay--after-open .ReactModal__Content.ReactModal__Content--after-open {
+  height: 210pt;
+  width: 410pt;
+  margin: 0 auto; }
+  .ReactModalPortal .ReactModal__Overlay.ReactModal__Overlay--after-open .ReactModal__Content.ReactModal__Content--after-open .modal-body div input.invalid {
+    border: 1px solid red; }
+  .ReactModalPortal .ReactModal__Overlay.ReactModal__Overlay--after-open .ReactModal__Content.ReactModal__Content--after-open .modal-body div .error-message {
+    color: #ff7272;
+    padding: 1em;
+    font-weight: bold; }
+
 .App .container .btnContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding: 10px; }
-
-.App .container .modal .modal-dialog .modal-content .modal-body div input.invalid {
-  border: 1px solid red; }
-
-.App .container .modal .modal-dialog .modal-content .modal-body div .error-message {
-  color: #ff7272;
-  padding: 1em;
-  font-weight: bold; }
 
 .moviesList {
   display: flex;
@@ -45,11 +48,12 @@
           padding: 2px 0; }
           .moviesList .movie .movieDetails .detiails div span {
             font-weight: bold; }
-      .moviesList .movie .movieDetails .container {
-        margin-top: 45px; }
-        .moviesList .movie .movieDetails .container .modal .modal-dialog .modal-content .modal-body div input.invalid {
-          border: 1px solid red; }
-        .moviesList .movie .movieDetails .container .modal .modal-dialog .modal-content .modal-body div .error-message {
-          color: #ff7272;
-          padding: 1em;
-          font-weight: bold; }
+
+.modalContainer .modal {
+  margin-top: 45px; }
+  .modalContainer .modal .modal-dialog .modal-content .modal-body div input.invalid {
+    border: 1px solid red; }
+  .modalContainer .modal .modal-dialog .modal-content .modal-body div .error-message {
+    color: #ff7272;
+    padding: 1em;
+    font-weight: bold; }

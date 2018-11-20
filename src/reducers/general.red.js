@@ -3,6 +3,8 @@ export default (state = {}, action) => {
         moviesList: [],
         openModalKey: -99,
         isMovieExist: false,
+        currentMovie: {},
+        isCorrectMovieTitle: true,
         ...state
     }
     switch (action.type) {
@@ -50,6 +52,20 @@ export default (state = {}, action) => {
             return {
                 ...state,
                 isMovieExist: isMovieExist
+            }
+        case 'SET_CURRENT_MOVIE':
+            let currentMovie = action.payload;
+
+            return {
+                ...state,
+                currentMovie: currentMovie
+            }
+        case 'IS_CORRECT_MOVIE_TITLE':
+            let isCorrectMovieTitle = action.payload;
+
+            return {
+                ...state,
+                isCorrectMovieTitle: isCorrectMovieTitle
             }
         default:
             return state
