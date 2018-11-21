@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/myAppMovies.github.io/static/js/runtime~main.9ebe1e3d.js"
   },
   {
-    "revision": "8ffc0ef7e309ed715c07",
-    "url": "/myAppMovies.github.io/static/js/main.8ffc0ef7.chunk.js"
+    "revision": "84998aec9265f8f3413b",
+    "url": "/myAppMovies.github.io/static/js/main.84998aec.chunk.js"
   },
   {
     "revision": "35b20f3da115e92abf13",
     "url": "/myAppMovies.github.io/static/js/1.35b20f3d.chunk.js"
   },
   {
-    "revision": "8ffc0ef7e309ed715c07",
+    "revision": "84998aec9265f8f3413b",
     "url": "/myAppMovies.github.io/static/css/main.bbb72e37.chunk.css"
   },
   {
-    "revision": "ff6342780fddade78d4917f8f9614126",
+    "revision": "897b32dc9d6d69f838a4e19b6eea6616",
     "url": "/myAppMovies.github.io/index.html"
   }
 ];
