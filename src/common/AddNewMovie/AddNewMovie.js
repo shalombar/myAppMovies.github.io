@@ -71,18 +71,23 @@ class AddNewMovie extends Component {
     }
 
     _titleCorrectFormat(title) {
-        let titleToArray = title.split('');
-        let result = [];
+        if (isNaN(title)) {
+            let titleToArray = title.split('');
+            let result = [];
 
-        result = Functions.cleanStringFromJunk(titleToArray);
+            result = Functions.cleanStringFromJunk(titleToArray);
 
-        result = Functions.cleanNumberAtMiddleOfWord(result);
+            result = Functions.cleanNumberAtMiddleOfWord(result);
 
-        result = Functions.setUpperlowerCase(result);
+            result = Functions.setUpperlowerCase(result);
 
-        result = Functions.arrayToString(result);
+            result = Functions.arrayToString(result);
 
-        return result;
+            return result;
+        }
+        
+        return title;
+
     }
 
     _validation(inputCheck) {

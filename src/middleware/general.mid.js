@@ -32,8 +32,7 @@ export default store => next => action => {
             let title = newData.title.replace(' ', '+');
 
             axios.get(OMDb_API + '&t=' + title + '&y=' + newData.year).then((respone) => {
-                console.log('zxczxc', respone)
-                if (respone.data.Response == 'False') {
+                if (respone.data.Response == 'False' || (!isNaN(respone.data.Title) && respone.data.Title != newData.title)) {
                     store.dispatch(actions.isCorrectMovieTitle(false))
 
                     return;
