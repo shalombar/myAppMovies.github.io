@@ -1,7 +1,7 @@
 {
   "main.css": "/myAppMovies.github.io/static/css/main.bbb72e37.chunk.css",
-  "main.js": "/myAppMovies.github.io/static/js/main.8ffc0ef7.chunk.js",
-  "main.js.map": "/myAppMovies.github.io/static/js/main.8ffc0ef7.chunk.js.map",
+  "main.js": "/myAppMovies.github.io/static/js/main.84998aec.chunk.js",
+  "main.js.map": "/myAppMovies.github.io/static/js/main.84998aec.chunk.js.map",
   "static/js/1.35b20f3d.chunk.js": "/myAppMovies.github.io/static/js/1.35b20f3d.chunk.js",
   "static/js/1.35b20f3d.chunk.js.map": "/myAppMovies.github.io/static/js/1.35b20f3d.chunk.js.map",
   "runtime~main.js": "/myAppMovies.github.io/static/js/runtime~main.9ebe1e3d.js",
@@ -9,6 +9,6 @@
   "static/media/logo.svg": "/myAppMovies.github.io/static/media/logo.ee7cd8ed.svg",
   "static/css/main.bbb72e37.chunk.css.map": "/myAppMovies.github.io/static/css/main.bbb72e37.chunk.css.map",
   "index.html": "/myAppMovies.github.io/index.html",
-  "precache-manifest.15c6a9fde357b5c004824a97feb9c09b.js": "/myAppMovies.github.io/precache-manifest.15c6a9fde357b5c004824a97feb9c09b.js",
+  "precache-manifest.58444ba72e6ab0fb87c7750b33d6aa07.js": "/myAppMovies.github.io/precache-manifest.58444ba72e6ab0fb87c7750b33d6aa07.js",
   "service-worker.js": "/myAppMovies.github.io/service-worker.js"
 }

@@ -38,13 +38,13 @@
       flex-direction: column;
       justify-content: space-between; }
       .moviesList .movie .movieDetails .movieTitle {
-        font-size: 12px;
+        font-size: 20pt;
         text-align: center; }
       .moviesList .movie .movieDetails .detiails {
         flex-direction: column;
         margin-top: 13pt; }
         .moviesList .movie .movieDetails .detiails div {
-          font-size: 7px;
+          font-size: 9pt;
           padding: 2px 0; }
           .moviesList .movie .movieDetails .detiails div span {
             font-weight: bold; }
